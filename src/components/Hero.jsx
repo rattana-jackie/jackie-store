@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import vd1 from "../assets/video_hero.webm";
 
 function Hero() {
   const [play, setPlay] = useState(true);
@@ -19,7 +20,7 @@ function Hero() {
   return (
     <section className="relative">
       <video
-        src="https://media.thewhitecompany.com/v/white/dt-hero-hp-wk37-su26/desktop_vp9"
+        src={vd1}
         autoPlay
         loop
         className="h-175 w-full md:w-full md:h-auto object-cover"
