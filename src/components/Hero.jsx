@@ -21,6 +21,7 @@ function Hero() {
     <section className="relative">
       <video
         src={vd1}
+        type="video/webm"
         autoPlay
         loop
         className="h-175 w-full md:w-full md:h-auto object-cover"
