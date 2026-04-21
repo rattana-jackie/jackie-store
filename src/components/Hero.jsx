@@ -20,13 +20,15 @@ function Hero() {
   return (
     <section className="relative">
       <video
-        src={vd1}
         type="video/webm"
+        muted
         autoPlay
         loop
         className="h-175 w-full md:w-full md:h-auto object-cover"
         ref={video}
-      ></video>
+      >
+        <source src={vd1} />
+      </video>
       <button
         className="absolute bottom-1 right-1 text-slate-50 cursor-pointer text-2xl"
         onClick={handlePlay}
